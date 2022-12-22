@@ -1,0 +1,31 @@
+.card {
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(235, 225, 220);
+    transition: background 0.2s, border 0.2s;
+}
+
+.card:hover {
+    border-color: #3366ff;
+    background-color: #fafbff;
+    box-shadow: 0px 4px 8px rgba(16, 24, 64, 0.08);
+}
+
+.card h2 {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.card:hover span {
+    transform: translateX(5px);
+}
+
+.card span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card p {
+    color: #858585;
+    max-width: 25ch;
+}

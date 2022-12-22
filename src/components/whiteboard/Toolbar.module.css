@@ -1,0 +1,66 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.container:hover > .toolbar {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.toolbar {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(235, 225, 220);
+    padding: 0.5rem;
+    box-shadow: 0px 4px 16px rgba(16, 24, 64, 0.1);
+    transition: transform 0.25s, opacity 0.25s;
+    transform: translateY(500px);
+    opacity: 0;
+    position: fixed;
+    display: flex;
+    gap: 1rem;
+}
+
+.colorMenu {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.group {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.button {
+    background: none;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
+    color: #4f4d80;
+    cursor: pointer;
+    transition: color 0.4s, background 0.4s;
+}
+
+.button:hover {
+    background: #f9fafc;
+}
+
+.button[data-active="true"] {
+    color: #3366ff;
+    background: #f4f6fa;
+}
